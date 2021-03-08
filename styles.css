@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font--size: 30px;
+}
+
+body {
+  width: 99vw;
+  height: 99vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  height: 60px;
+  width: 99vw;
+  background: #19849B;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__name {
+  font-size: var(--font--size);
+}
