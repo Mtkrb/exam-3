@@ -112,7 +112,7 @@ body {
 }
 
 .hero__modal-btn:hover {
-  background-color: #19849B;
+  background-color: #19849b;
   border: none;
 }
 
@@ -160,16 +160,39 @@ body {
   margin-top: 15px;
 }
 
-.gallery__image {
+  .gallery__image {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background: #19849b;
+  }
+
+  .gallery__placement {
+    padding: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-size: 24px 24px;
+    background: url(/images/gallery-icon.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-clip: content-box;
+    background-color: #19849b;
+  }
+
+/* .gallery__image  {
   padding: 0;
   padding-bottom: 20px;
   padding-right: 20px;
+} */
+
+.gallery__pictures {
+  margin: 0;
 }
 
 .gallery__image:hover {
-  background-color: linear-gradient(0deg, rgba(25, 132, 155, 0.5), rgba(25, 132, 155, 0.5)), url(.jpg);
-  background-clip: content-box;
+ background: #19849B;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .footer {
