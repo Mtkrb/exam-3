@@ -1,0 +1,28 @@
+@media (max-width: 1200px) {
+  .hero__tablet-img {
+    height: 355px;
+    display: block;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .gallery__image {
+    padding-bottom: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__img {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .hero__tablet-img {
+    display: none;
+  }
+}

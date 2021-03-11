@@ -5,7 +5,12 @@
 }
 
 :root {
-  --font--size: 30px;
+  --font--size--30: 30px;
+  --font--size-16: 16px;
+  --font--size--18: 18px;
+  --black: #272a2f;
+  --cyan: #19849b;
+  --white: white;
 }
 
 body {
@@ -17,8 +22,8 @@ body {
 .header {
   height: 60px;
   width: 99vw;
-  background: #19849B;
-  color: white;
+  background: var(--cyan);
+  color: var(--white);
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   justify-content: center;
@@ -26,5 +31,215 @@ body {
 }
 
 .header__name {
-  font-size: var(--font--size);
+  font-size: var(--font--size--30);
+}
+
+.main {
+  background: var(--black);
+  width: 99vw;
+}
+
+.hero {
+  margin: 0 auto;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.hero__img {
+  height: 355px;
+  width: 411px;
+  padding: 0;
+  margin-right: 70px;
+}
+
+.hero__main-description {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--font--size--30);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.hero__info {
+  padding: 0;
+}
+
+.hero__hr {
+  background: var(--cyan);
+  height: 4px;
+  margin-bottom: 10px;
+}
+
+.hero__secondary-description {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.hero__tablet-img {
+  display: none;
+}
+
+.hero__text {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--font--size-16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.hero__modal-btn {
+  width: 300px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.hero__modal-btn:hover {
+  background-color: #19849B;
+  border: none;
+}
+
+.hero__btn-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--font--size--18);
+  font-style: normal;
+  display: flex;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.gallery {
+  padding-bottom: 80px;
+}
+
+.gallery__container {
+  margin-top: 100px;
+}
+
+.gallery__portfolio {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--white);
+}
+
+.gallery__description {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--font--size-16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--white);
+  margin-top: 15px;
+}
+
+.gallery__image {
+  padding: 0;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.gallery__image:hover {
+  background-color: linear-gradient(0deg, rgba(25, 132, 155, 0.5), rgba(25, 132, 155, 0.5)), url(.jpg);
+  background-clip: content-box;
+  cursor: pointer;
+}
+
+.footer {
+  height: 205px;
+}
+
+.footer__contacts {
+  height: 160px;
+  background-color: #19849b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__privacy {
+  height: 45px;
+  background-color: #16758a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__image {
+  border-radius: 50%;
+  height: 132px;
+  width: 132px;
+  margin-right: 15px;
+}
+
+.footer__name {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.footer__number {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--font--size--18);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--white);
+}
+
+.footer__location {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--font--size-16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--white);
+}
+
+.footer__privacy-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--white);
+  margin: 0;
 }

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>exam-3</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
     <link
@@ -14,11 +13,69 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <header class="header">
       <h2 class="header__name">Lucas Montana</h2>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
+          <img class="hero__img col-12 col-md-12 col-lg-6 col-xl-auto col-xxl-auto" src="/images/Rectangle 2.svg" alt="Lucas's photo" />
+          <img class="hero__tablet-img col-12 col-md-12 col-lg-12 col-xl col-xxl-auto" src="/images/lucasTablet.svg" alt="Lucas's photo" />
+          <div class="hero__info col-12 col-md-12 col-lg-12">
+            <h1 class="hero__main-description">
+              Hey, I'm Lucas <br />
+              And I'm a professional photographer
+            </h1>
+            <hr class="hero__hr" />
+            <h2 class="hero__secondary-description">Curabitur blanit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus.</h2>
+            <p class="hero__text">
+              Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+              Vestibulum id ligulas semper. Cum sociis natoque penatibus et magnis maecenas. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+            <button class="hero__modal-btn">
+              <p class="hero__btn-text">Contact me</p>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__container container">
+          <h2 class="gallery__portfolio">Portfolio</h2>
+          <p class="gallery__description">
+            Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+            <div class="gallery__pictures row container">
+              <img class="col-6 col-md-3 gallery__image col-lg-3 col-xl-3" src="/images/pic1.svg" alt="lucas's pictures" />
+              <img class="col-6 col-md-3 gallery__image col-lg-3 col-xl-3" src="/images/pic2.svg" alt="lucas's pictures" />
+              <img class="col-6 col-md-3 gallery__image col-lg-3 col-xl-3" src="/images/pic3.svg" alt="lucas's pictures" />
+              <img class="col-6 col-md-3 gallery__image col-lg-3 col-xl-3" src="/images/pic4.svg" alt="lucas's pictures" />
+              <img class="col-6 col-md-3 gallery__image col-lg-3 col-xl-3" src="/images/pic5.svg" alt="lucas's pictures" />
+              <img class="col-6 col-md-3 gallery__image col-lg-3 col-xl-3" src="/images/pic6.svg" alt="lucas's pictures" />
+              <img class="col-6 col-md-3 gallery__image col-lg-3 col-xl-3" src="/images/pic7.svg" alt="lucas's pictures" />
+              <img class="col-6 col-md-3 gallery__image col-lg-3 col-xl-3" src="/images/pic8.svg" alt="lucas's pictures" />
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__contacts">
+        <img src="/images/footer-img.svg" alt="lucas's photo" class="footer__image">
+        <div class="footer__number-and-location">
+          <h2 class="footer__name">lucas montana</h2>
+          <p class="footer__number">+4 768 25 25 255</p>
+          <p class="footer__location">Poland, Warsaw</p>
+        </div>
+      </div>
+      <div class="footer__privacy">
+        <p class="footer__privacy-text">
+          All rights reserved. “World Photos”, Inc
+        </p>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
