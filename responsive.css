@@ -1,3 +1,9 @@
+@media (max-width:1440px){
+  .hero__modal-btn {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero__tablet-img {
     height: 355px;
@@ -13,7 +19,7 @@
   .gallery__placement {
     padding-bottom: 15px;
     padding-right: 15px;
-  } 
+  }
 }
 
 @media (max-width: 768px) {
@@ -22,7 +28,15 @@
     margin-bottom: 60px;
   }
 
+  .mgtop-email {
+    margin-top: 5px;
+  }
+
   .hero__tablet-img {
     display: none;
+  }
+
+  .gallery__container {
+    margin-top: 50px;
   }
 }

@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -36,7 +36,7 @@
               Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
               Vestibulum id ligulas semper. Cum sociis natoque penatibus et magnis maecenas. Donec ullamcorper nulla non metus auctor fringilla.
             </p>
-            <button class="hero__modal-btn">
+            <button type="button" class="hero__modal-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
               <p class="hero__btn-text">Contact me</p>
             </button>
           </div>
@@ -50,37 +50,29 @@
           </p>
           <div class="gallery__pictures row">
             <div class="gallery__placement col-6 col-md-3 col-lg-3 col-xl-3">
-                  <img class="gallery__image" src="/images/pic1.svg" alt="lucas's pictures"/>
+              <img class="gallery__image" src="/images/pic1.svg" alt="lucas's pictures" />
             </div>
             <div class="gallery__placement col-6 col-md-3 col-lg-3 col-xl-3">
-                  <img class="gallery__image" src="/images/pic2.svg" alt="lucas's pictures"/>
+              <img class="gallery__image" src="/images/pic2.svg" alt="lucas's pictures" />
             </div>
             <div class="gallery__placement col-6 col-md-3 col-lg-3 col-xl-3">
-                  <img class="gallery__image" src="/images/pic3.svg" alt="lucas's pictures"/>
+              <img class="gallery__image" src="/images/pic3.svg" alt="lucas's pictures" />
             </div>
             <div class="gallery__placement col-6 col-md-3 col-lg-3 col-xl-3">
-                  <img class="gallery__image" src="/images/pic4.svg" alt="lucas's pictures"/>
+              <img class="gallery__image" src="/images/pic4.svg" alt="lucas's pictures" />
             </div>
             <div class="gallery__placement col-6 col-md-3 col-lg-3 col-xl-3">
-                  <img class="gallery__image" src="/images/pic5.svg" alt="lucas's pictures"/>
+              <img class="gallery__image" src="/images/pic5.svg" alt="lucas's pictures" />
             </div>
             <div class="gallery__placement col-6 col-md-3 col-lg-3 col-xl-3">
-                  <img class="gallery__image" src="/images/pic6.svg" alt="lucas's pictures"/>
+              <img class="gallery__image" src="/images/pic6.svg" alt="lucas's pictures" />
             </div>
             <div class="gallery__placement col-6 col-md-3 col-lg-3 col-xl-3">
-                  <img class="gallery__image" src="/images/pic7.svg" alt="lucas's pictures"/>
+              <img class="gallery__image" src="/images/pic7.svg" alt="lucas's pictures" />
             </div>
             <div class="gallery__placement col-6 col-md-3 col-lg-3 col-xl-3">
-                  <img class="gallery__image" src="/images/pic8.svg" alt="lucas's pictures"/>
+              <img class="gallery__image" src="/images/pic8.svg" alt="lucas's pictures" />
             </div>
-            <!-- <img class="gallery__image col-6 col-md-3 col-lg-3 col-xl-3" src="/images/pic1.svg" alt="lucas's pictures"/>
-            <img class="gallery__image col-6 col-md-3 col-lg-3 col-xl-3" src="/images/pic2.svg" alt="lucas's pictures"/>
-            <img class="gallery__image col-6 col-md-3 col-lg-3 col-xl-3" src="/images/pic3.svg" alt="lucas's pictures"/>
-            <img class="gallery__image col-6 col-md-3 col-lg-3 col-xl-3" src="/images/pic4.svg" alt="lucas's pictures"/>
-            <img class="gallery__image col-6 col-md-3 col-lg-3 col-xl-3" src="/images/pic5.svg" alt="lucas's pictures"/>
-            <img class="gallery__image col-6 col-md-3 col-lg-3 col-xl-3" src="/images/pic6.svg" alt="lucas's pictures"/>
-            <img class="gallery__image col-6 col-md-3 col-lg-3 col-xl-3" src="/images/pic7.svg" alt="lucas's pictures"/>
-            <img class="gallery__image col-6 col-md-3 col-lg-3 col-xl-3" src="/images/pic8.svg" alt="lucas's pictures"/> -->
           </div>
         </div>
       </section>
@@ -98,10 +90,42 @@
         <p class="footer__privacy-text">All rights reserved. “World Photos”, Inc</p>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2 class="modal-contact-me">Contact me</h2>
+            <p class="modal-info">
+              Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            </p>
+            <form class="modal-form">
+              <div class="row">
+                <div class="col-12 input col-sm-4">
+                  <input type="text" class="form-control" placeholder="Your name..." />
+                </div>
+                <div class="col-12 input col-sm-8">
+                  <input type="email" class="form-control mgtop-email" placeholder="Your email..." />
+                </div>
+              </div>
+              <div class="col-12 textarea input">
+                <textarea rows="10" cols="45" placeholder="Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Fu blandit tempus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vollis  commodo luctus. Curabitur blandit. Morbi leo risus, porta ac consectetur ac, at eros." class="form-control"></textarea>
+              </div>
+              <div class="col-12 col-sm-5">
+                <button class="modal-send" type="submit"><p class="btn-text">send message</p></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
   </body>
